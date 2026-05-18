@@ -6,7 +6,7 @@ export default function RideGroups() {
   const [rideData, setRideData] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/rides/match")
+    fetch("https://commuteos-backend.onrender.com/api/rides/groups")
       .then((res) => res.json())
       .then((data) => {
         setRideData(data);

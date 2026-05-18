@@ -28,7 +28,7 @@ export default function EmployeeForm() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/employees",
+        "https://commuteos-backend.onrender.com/api/employees",
         {
           method: "POST",
           headers: {
